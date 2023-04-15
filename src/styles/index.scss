@@ -2,3 +2,13 @@
 @import "variables";
 @import "common";
 @import "fonts";
+
+.light-theme {
+// pages
+  @import "../styles/pages/light-theme/page-home.scss";
+}
+
+.dark-theme {
+// pages
+  @import "../styles/pages/dark-theme/page-home.scss";
+}
