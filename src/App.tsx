@@ -1,12 +1,15 @@
 import { Fragment } from "react";
 import Home from "pages/index";
 import AppContextProvider from "contexts/app";
+import AppLayout from "components/app-layout";
 
 function App() {
   return (
     <Fragment>
       <AppContextProvider>
-        <Home />
+        <AppLayout>
+          <Home />
+        </AppLayout>
       </AppContextProvider>
     </Fragment>
   );

@@ -1,0 +1,29 @@
+.light-theme {
+  .app-layout {
+    .layout {
+      background-image: url(../../assets/images/bg-light.png);
+    }
+  }
+}
+
+.dark-theme {
+  .app-layout {
+    .layout {
+      background-image: url(../../assets/images/bg-dark.png);
+    }
+  }
+}
+
+.app-layout {
+  .layout {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+  }
+}
