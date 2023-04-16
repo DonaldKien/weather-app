@@ -1,0 +1,68 @@
+.app-list {
+	.list {
+		display: flex;
+		flex-direction: row;
+		background-color: rgba(255, 255, 255, 0.4);
+		justify-content: space-between;
+		border-radius: 16px;
+		padding: 21px;
+		margin-top: 18px;
+		align-items: center;
+
+		&--row {
+			flex-direction: column;
+		}
+
+		&__location {
+			font-size: $text-size-16;
+		}
+
+		&__more-info {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+		}
+
+		&__date-time {
+			font-size: $text-size-14;
+		}
+
+		&__toggle-1 {
+			display: none;
+		}
+
+		&--margin-left {
+			margin-left: 10px;
+		}
+	}
+
+	@include max-width($scr-sm) {
+		.list {
+			padding: 10px;
+			display: flex;
+
+			&__location {
+				font-size: $text-size-14;
+			}
+
+			&__toggle-1 {
+				display: flex;
+				font-size: $text-size-10;
+				font-family: NotoSans-Light, sans-serif;
+			}
+
+			&__toggle-2 {
+				display: none;
+			}
+		}
+	}
+}
+
+.dark-theme {
+	.app-list {
+		.list {
+			background-color: rgba(26, 26, 26, 0.5);
+			color: $c-white;
+		}
+	}
+}

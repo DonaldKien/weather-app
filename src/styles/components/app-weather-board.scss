@@ -1,0 +1,102 @@
+.app-weather-board {
+	position: relative;
+	.board {
+		&__todays-weather-label {
+			font-size: $text-size-16;
+		}
+
+		&__weather-celcius {
+			color: $c-purple;
+			font-size: $text-size-86;
+			font-family: NotoSans-ExtraBold, sans-serif;
+		}
+
+		&__weather-high-low {
+			font-size: $text-size-16;
+		}
+
+		&__weather-image {
+			height: 300px;
+			width: 300px;
+			position: absolute;
+			top: -140px;
+			right: 0px;
+		}
+
+		&__weather-more-info-row {
+			color: $c-gray;
+			display: flex;
+			flex-direction: row;
+			width: 100%;
+			justify-content: space-between;
+			font-size: $text-size-16;
+			margin-top: 10px;
+		}
+
+		&__weather-location {
+			width: 30%;
+		}
+
+		&__weather-more-info-row-2 {
+			display: flex;
+			flex-direction: row;
+			width: 100%;
+			justify-content: space-between;
+		}
+
+		&__weather-location {
+			font-family: NotoSans-Bold, sans-serif;
+		}
+	}
+
+	// mobile
+	@include max-width($scr-sm) {
+		.board {
+			&__weather-image {
+				height: 200px;
+				width: 200px;
+				top: -100px;
+				right: -20px;
+			}
+
+			&__weather-celcius {
+				font-size: $text-size-48;
+				font-family: NotoSans-ExtraBold, sans-serif;
+			}
+
+			&__weather-more-info-row {
+				font-size: $text-size-14;
+			}
+
+			&__weather-more-info-row-2 {
+				display: flex;
+				flex-direction: column-reverse;
+				align-items: flex-end;
+				position: absolute;
+				bottom: 0px;
+			}
+		}
+	}
+}
+
+.dark-theme {
+	.app-weather-board {
+		.board {
+			&__weather-celcius {
+				color: $c-white;
+			}
+
+			&__todays-weather-label {
+				color: $c-white;
+			}
+
+			&__weather-more-info-row {
+				color: $c-white;
+			}
+
+			&__weather-high-low {
+				color: $c-white;
+			}
+		}
+	}
+}

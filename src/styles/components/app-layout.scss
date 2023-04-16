@@ -1,29 +1,30 @@
-.light-theme {
-	.app-layout {
-		.layout {
-			background-image: url(../../assets/images/bg-light.png);
+.app-layout {
+	position: absolute;
+	min-height: 100%;
+	min-width: 100%;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	display: block;
+	overflow-y: auto;
+	background-image: url(../../assets/images/bg-light.png);
+
+	.layout {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		overflow-y: auto;
+
+		&__wrapper {
+			width: 100%;
+			max-width: 740px;
+			padding: 30px 20px;
 		}
 	}
 }
 
 .dark-theme {
 	.app-layout {
-		.layout {
-			background-image: url(../../assets/images/bg-dark.png);
-		}
-	}
-}
-
-.app-layout {
-	.layout {
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		right: 0;
-		left: 0;
-		background-size: cover;
-		background-position: center;
-		background-repeat: no-repeat;
-		overflow: hidden;
+		background-image: url(../../assets/images/bg-dark.png);
 	}
 }

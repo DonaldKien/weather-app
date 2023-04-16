@@ -1,0 +1,50 @@
+.app-icon-button {
+	.button {
+		border: none;
+
+		&:hover {
+			cursor: pointer;
+			filter: brightness(1.1);
+		}
+
+		&:active {
+			filter: brightness(1.2);
+		}
+
+		&__purple {
+			background-color: $c-purple;
+			border-radius: 20px;
+			padding-left: 13px;
+			padding-right: 13px;
+			height: 100%;
+			display: flex;
+			align-items: center;
+		}
+
+		&__white {
+			background-color: $c-white;
+			height: 34px;
+			width: 34px;
+			border-radius: 99px;
+			box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+}
+
+.dark-theme {
+	.app-icon-button {
+		.button {
+			&__purple {
+				background-color: $c-dark-purple;
+			}
+
+			&__white {
+				background-color: inherit;
+				border: 2px solid rgba(255, 255, 255, 0.4);
+			}
+		}
+	}
+}

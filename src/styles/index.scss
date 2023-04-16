@@ -1,10 +1,16 @@
-/* -- common -- */
+// common
 @import "variables";
 @import "common";
 @import "fonts";
+@import "mixin";
 
 // pages
 @import "../styles/pages/page-home.scss";
 
 // components
 @import "../styles/components/app-layout.scss";
+@import "../styles/components/app-search-input.scss";
+@import "../styles/components/app-icon-button.scss";
+@import "../styles/components/app-list.scss";
+@import "../styles/components/app-weather-board.scss";
+@import "../styles/components/app-button.scss";

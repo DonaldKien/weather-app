@@ -1,6 +1,7 @@
 body {
-	@extend.font-regular;
+	font-family: NotoSans-Regular, sans-serif;
 	font-size: $text-size-16;
 	margin: 0;
 	padding: 0;
+	overflow-y: scroll;
 }

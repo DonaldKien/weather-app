@@ -1,0 +1,22 @@
+.app-button {
+    .button {
+        width: 100%;
+        height: 50px;
+        border: none;
+        border-radius: 20px;
+        background-color: $c-purple;
+        color: $c-white;
+        font-size: $text-size-16;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.dark-theme {
+    .app-button {
+        .button {
+            background-color: $c-dark-purple;
+        }
+    }
+}
