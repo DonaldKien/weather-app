@@ -102,7 +102,15 @@ const Home: React.FC<{}> = () => {
 
 				<form autoComplete="off" onSubmit={formik.handleSubmit} className="home__input-form">
 					{fields.map((o) => {
-						return <AppSearchInput key={o.name} label={o.label} onChange={(e) => formik.handleChange(o.name)(e.target.value)} value={formik.values[o.name as keyof FormikValues]} error={formik.errors[o.name as keyof FormikValues]} />;
+						return (
+							<AppSearchInput
+								key={o.name}
+								label={o.label}
+								onChange={(e) => formik.handleChange(o.name)(e.target.value)}
+								value={formik.values[o.name as keyof FormikValues]}
+								error={formik.errors[o.name as keyof FormikValues]}
+							/>
+						);
 					})}
 					<AppIconButton buttonType="submit" src={searchIcon} alt="search-icon" styleType="purple" disabled={isLoading} />
 				</form>

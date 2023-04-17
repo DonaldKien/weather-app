@@ -54,10 +54,20 @@ const AppList: React.FC<Props> = (props) => {
 				<div className="list__more-info">
 					<div className="list--margin-left list__date-time list__toggle-2">{dateTime}</div>
 					<div className="list--margin-left">
-						<AppIconButton src={lightTheme ? searchIcon : searchIconDark} alt="search" styleType="white" onClick={() => onHandleSearch({ city: props.info.city, country: props.info.country })} />
+						<AppIconButton
+							src={lightTheme ? searchIcon : searchIconDark}
+							alt="search"
+							styleType="white"
+							onClick={() => onHandleSearch({ city: props.info.city, country: props.info.country })}
+						/>
 					</div>
 					<div className="list--margin-left">
-						<AppIconButton src={lightTheme ? deleteIcon : deleteIconDark} alt="delete" styleType="white" onClick={() => onHandleDelete(props.info.id)} />
+						<AppIconButton
+							src={lightTheme ? deleteIcon : deleteIconDark}
+							alt="delete"
+							styleType="white"
+							onClick={() => onHandleDelete(props.info.id)}
+						/>
 					</div>
 				</div>
 			</div>

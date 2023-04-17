@@ -8,7 +8,7 @@ type Props = {
 	buttonType?: "button" | "submit";
 	styleType?: StyleTypeProps;
 	onClick?: React.MouseEventHandler<HTMLButtonElement> | undefined;
-    disabled?: boolean
+	disabled?: boolean;
 };
 
 const getButtonClassName = (styleType: StyleTypeProps) => {
